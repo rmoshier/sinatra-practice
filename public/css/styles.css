@@ -1,0 +1,36 @@
+/* typography */
+
+h1 {
+    font-size:2em;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: none;
+    line-height: 1.4em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+/* navigation ul with #nav */
+
+nav {
+    list-style:bulleted;
+    font-size:1em;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-transform: none;
+    line-height: 1.4em;
+}
+
+/* backgrounds */
+
+body {
+    background: rgb(27, 47, 56);
+}

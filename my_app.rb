@@ -6,6 +6,22 @@ class MyApp < Sinatra::Base
   end
 
   get "/about-me" do
-    "I am Momo."
+    erb :about_me
+  end
+
+  get "/cute_pictures_of_animals" do
+    erb :cute_pictures_of_animals
+  end
+
+  get "/posts/:my_posts" do
+    erb ("/posts/#{params[:my_posts]}".to_sym)
+  end
+
+  get "/pudding_experience" do
+    erb :pudding_experience
+  end
+
+  get "/:id" do
+    params.inspect
   end
 end
