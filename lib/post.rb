@@ -7,8 +7,11 @@ class Post
  # with the attributes set
  # Posts.all => [post, post]
  # How to test in irb: irb -r ./lib/post.rb
-   def initialize(array)
+   attr_accessor :title, :url
 
+   def initialize(array)
+      @title = array[-1].split(".")[0] #this is basically your title
+      @url   = "/posts/#{@title}"
    end
 
    def self.all #we want a class method that creates instances
