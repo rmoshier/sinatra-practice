@@ -1,3 +1,7 @@
+<% @posts.each do |post| %>
+  <a href="<%=post.url %>"><%= post.title %></a>
+<% end %>
+<br>
 <img src="mongolia.jpg" alt="me in Mongolia">
 <h1>The current time is <%= Time.now %>.</h1>
-<h1>You have arrived.</h1>
+<h1>Welcome.</h1>

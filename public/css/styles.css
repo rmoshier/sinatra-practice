@@ -1,11 +1,11 @@
 /* typography */
 
-h1 {
+h1, p {
     font-size:2em;
     font-family: Helvetica;
     font-style: normal;
     font-weight: normal;
-    color: rgb(251, 246, 226);
+    color: rgb(135, 147, 149);
     letter-spacing: 1px;
     text-transform: none;
     line-height: 1.4em;
@@ -32,5 +32,5 @@ nav {
 /* backgrounds */
 
 body {
-    background: rgb(27, 47, 56);
+    background: rgb(16, 38, 47);
 }

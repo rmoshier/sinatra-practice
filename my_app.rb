@@ -1,7 +1,10 @@
 require 'sinatra'
+require './lib/post'
 
 class MyApp < Sinatra::Base
+
   get "/" do #creating a place that you can go to on the internet
+    @posts = Post.all
     erb :index
   end
 
@@ -14,7 +17,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/posts/:my_posts" do
-    erb ("/posts/#{params[:my_posts]}".to_sym)
+    erb "/posts/#{params[:my_posts]}".to_sym
   end
 
   get "/pudding_experience" do
