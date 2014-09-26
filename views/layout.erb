@@ -1,27 +1,35 @@
-<DOCTYPE html>
-  <html>
+<!-- <DOCTYPE html> -->
+  <!-- <html> -->
 
     <head>
+      <title>Rachel Moshier</title>
       <link href="/css/styles.css" media="all" rel="stylesheet">
       <script src="/javascripts/app.js"></script>
-      <title>rsmomo</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
-      <center>
-      <a href = "/">Home</a>
-      <a href = "/about-me">About Me</a>
-      <a href = "/cute_pictures_of_animals">My Cats</a>
-      <a href = "/posts/first_post">Blog</a>
-      <a href = "/pudding_experience">Pudding Experience</a>
+      <header>
+        <span class="link-color">
+          <nav>
+            <ul class="navbar">
+              <li><a href="/">rm</a></li>
 
-      <hr>
+              <li><a href = "/about-me">about</a></li>
 
+              <li><a href = "/cute_pictures_of_animals">cats</a></li>
+
+              <li><a href = "/posts/first_post">thoughts</a></li>
+
+              <li><a href = "/pudding_experience">dessert</a></li>
+            </ul>
+          </nav>
+        </span>
+      </header>
+
+      <div id="content">
       <%= yield %>
-
-      <hr>
-      <a href = "/">Home</a>
+      </div>
 
     </body>
-
-</html>
+<!-- </html> -->

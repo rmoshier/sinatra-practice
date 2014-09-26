@@ -8,6 +8,12 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
+  post "/" do
+    puts params.inspect
+    # add input into database
+    redirect to("/")
+  end
+
   get "/about-me" do
     erb :about_me
   end
