@@ -18,8 +18,8 @@ class MyApp < Sinatra::Base
     erb :about_me
   end
 
-  get "/cute_pictures_of_animals" do
-    erb :cute_pictures_of_animals
+  get "/contact" do
+    erb :contact
   end
 
   get "/posts/:my_posts" do
@@ -34,3 +34,6 @@ class MyApp < Sinatra::Base
     params.inspect
   end
 end
+
+# http://rachel-sinatra.herokuapp.com/
+# http://localhost:9292/

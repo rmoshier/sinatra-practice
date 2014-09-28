@@ -34,12 +34,23 @@ header li a:hover {
 }
 
 #content {
-  margin: 8em auto 0 2em;
+  margin: 4em auto 0 2em;
   width: 1000px
 }
 
 h1, p {
   font-size:2em;
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(107, 122, 130);
+  letter-spacing: 1px;
+  text-transform: none;
+  line-height: 1.4em;
+}
+
+p {
+  font-size:1em;
   font-family: 'Open Sans', serif;
   font-style: normal;
   font-weight: normal;
