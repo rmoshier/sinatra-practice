@@ -70,6 +70,16 @@ header li a:hover {
   padding-left: 28px;
 }
 
+.dropdown {
+  display: none;
+  position: relative;
+  left: 0;
+}
+
+header li:hover > .dropdown {
+  display: block;
+}
+
 /* video */
 video {
   margin: 0 10% 0 10%;
@@ -79,7 +89,6 @@ video {
 /* links */
 
 a {
-  /*:visited*/
   font-family: 'Open Sans', serif;
   color: rgb(107, 122, 130);
   text-decoration: underline;
@@ -95,8 +104,31 @@ footer {
   font-family: 'Open Sans', serif;
   background-color: #eee8d5;
   color: #93a1a1;
-  padding-left: 30px;
+  padding-left: 0;
   line-height: 200%;
   padding-right: 1em;
   bottom: 0;
+}
+
+footer li {
+  list-style: none;
+  float: left;
+  padding: 3px 5px 0 5px;
+  margin-top: 0;
+  /* this is where i can play with words in nav spacing*/
+}
+
+footer li a {
+  text-decoration: none;
+  color: #93a1a1;
+}
+
+footer li a:hover {
+  color: rgb(201, 21, 111);
+}
+
+.footerbar {
+  padding: 0 0 0 28px;
+  margin: 0;
+
 }

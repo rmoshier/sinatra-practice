@@ -22,8 +22,8 @@ class MyApp < Sinatra::Base
     erb :contact
   end
 
-  get "/posts/:my_posts" do
-    erb "/posts/#{params[:my_posts]}".to_sym
+  get "/posts/:date/:my_posts" do
+    erb "/posts/#{params[:date]}/#{params[:my_posts]}".to_sym
   end
 
   get "/pudding_experience" do
