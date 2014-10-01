@@ -3,6 +3,10 @@ require './lib/post'
 
 class MyApp < Sinatra::Base
 
+  before do
+    @posts = Post.all
+  end
+
   get "/" do #creating a place that you can go to on the internet
     @posts = Post.all
     erb :index

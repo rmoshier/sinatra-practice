@@ -47,13 +47,16 @@ header {
   padding: 0 0 25px 0;
   background-size: 30%;
   background-color: rgb(170, 137, 0);
+    /*text-decoration: none;
+    color: rgb(251, 246, 226);*/
 }
 
-header li {
+header > ul > li {
   list-style: none;
   float: left;
   padding: 3px 5px 0 5px;
   margin-top: -10px;
+  display: inline-block;
   /* this is where i can play with words in nav spacing*/
 }
 
@@ -72,15 +75,16 @@ header li a:hover {
 
 .dropdown {
   display: none;
-  position: relative;
-  left: 0;
 }
 
 header li:hover > .dropdown {
   display: block;
+  position: absolute;
+  background-color: green;
 }
 
 /* video */
+
 video {
   margin: 0 10% 0 10%;
 }

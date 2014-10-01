@@ -17,13 +17,15 @@
 
           <!-- <li><a href = "/contact">contact</a></li> -->
 
-          <li><a href = "/posts/2014-09-29/first_post">thoughts</a></li>
+          <li>thoughts
             <ul class="dropdown">
-              <li><a href="a">Month 1</a>
-              <li><a href="a">Month 2</a>
-              </li>
-            </ul>
 
+              <% @posts.each do |post| %>
+              <li> <a href=<%=post.url%>><%=post.title%></a> </li>
+              <% puts post.title %>
+              <% end %>
+            </ul>
+          </li>
           <li><a href = "/pudding_experience">dessert</a></li>
         </ul>
       </header>
