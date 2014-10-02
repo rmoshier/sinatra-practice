@@ -35,6 +35,10 @@ p {
   line-height: 1.4em;
 }
 
+code {
+  color: rgb(88, 87, 186)
+}
+
 /* header */
 
 header {
@@ -100,6 +104,23 @@ a {
   font-family: 'Open Sans', serif;
   color: rgb(107, 122, 130);
   text-decoration: underline;
+}
+
+/* button */
+
+button {
+  font-family: 'Open Sans', serif;
+  box-shadow: none;
+  font-size: 1em;
+  background-color: rgb(8, 41, 51);
+  color: rgb(26, 116, 203);
+  border: none;
+}
+
+button:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
 }
 
 /* footer */
