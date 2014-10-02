@@ -47,6 +47,7 @@ header {
   padding: 0 0 25px 0;
   background-size: 30%;
   background-color: rgb(170, 137, 0);
+  font-family: 'Open Sans', serif;
     /*text-decoration: none;
     color: rgb(251, 246, 226);*/
 }
@@ -57,6 +58,7 @@ header > ul > li {
   padding: 3px 5px 0 5px;
   margin-top: -10px;
   display: inline-block;
+  color: rgb(251, 246, 226);
   /* this is where i can play with words in nav spacing*/
 }
 
@@ -75,12 +77,14 @@ header li a:hover {
 
 .dropdown {
   display: none;
+  padding: 10px 10px 10px 10px;
 }
 
 header li:hover > .dropdown {
   display: block;
   position: absolute;
-  background-color: green;
+  background-color: rgb(170, 137, 0);
+  list-style: none;
 }
 
 /* video */
