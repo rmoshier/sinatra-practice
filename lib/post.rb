@@ -10,7 +10,7 @@ class Post
    attr_accessor :title, :url
 
    def initialize(array)
-      @title = array[-1].split(".")[0].join #this is basically your title
+      @title = array[-1].split(".")[0] #this is basically your title
       @date = Date.parse(array[-2])
       @post_date = array[-2]
       @url   = "/posts/#{@post_date}/#{@title}"
