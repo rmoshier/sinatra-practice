@@ -6,8 +6,8 @@ $(document).ready(function () {
       $(this).toggle();
     });
 
-    $( "button" ).click(function() {
-      $("p1").toggle( "slow" );
+    $("button").click(function() {
+      $("p1").toggle("slow");
     });
 
   var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
