@@ -121,7 +121,7 @@ button:hover {
     border: none;
     background-color: rgb(8, 41, 51);
     color: rgb(201, 21, 111);
-    box-shadow: 0px 0px 1px #777;
+    box-shadow: 0 0 1px #777;
 }
 
 /* footer */
