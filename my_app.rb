@@ -41,3 +41,4 @@ end
 
 # http://rachel-sinatra.herokuapp.com/
 # http://localhost:9292/
+# run rackup in temrinal to start server

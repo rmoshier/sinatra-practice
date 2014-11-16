@@ -52,8 +52,8 @@ header {
   background-size: 30%;
   background-color: rgb(170, 137, 0);
   font-family: 'Open Sans', serif;
-    /*text-decoration: none;
-    color: rgb(251, 246, 226);*/
+  text-decoration: none;
+  color: rgb(251, 246, 226);
 }
 
 header > ul > li {
@@ -61,7 +61,6 @@ header > ul > li {
   float: left;
   padding: 3px 5px 0 5px;
   margin-top: -10px;
-  display: inline-block;
   color: rgb(251, 246, 226);
   /* this is where i can play with words in nav spacing*/
 }
@@ -136,7 +135,6 @@ footer {
   color: #93a1a1;
   padding-left: 0;
   line-height: 200%;
-  padding-right: 1em;
   bottom: 0;
 }
 
