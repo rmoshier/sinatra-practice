@@ -1,0 +1,54 @@
+<h1>On games, visualizations, and running servers</h1>
+
+<p>
+  This week was a challenging week for me. It was a spike week (a week were you research and execute a small project) in preparation for starting our capstones in a few weeks.
+Over the week, I spent time exploring three new things, all of which involved javascript: a 3d game framework called voxel.js, a 2d game game called phaser, and a javascript library for creating data visualizations called d3.js.
+I've been interested in learning more about javascript ever since we first started learning it at Ada, and I've been curious about making a game ever since I can remember. So, I thought it would be a good idea to explore javascript
+game frameworks for my spike week. Unfortunately, this idea kind of flopped. Learning a new programming language and the mechanics of video game building at the same time is very difficult, and while making a game
+is a long term learning goal of mine, I don't think it makes sense to do that as a capstone project.
+</p>
+
+<p>
+  This blog post was going to me about my experience with d3.js. I've been curious about d3.js since I first heard about it at the beginning of Ada. You've probably seen beautiful d3.js visualizations at the New York Times -
+I believe they hired the created of d3.js to work for them. A local meet-up group, MaptimeSea, offered a recent intro to d3 and I really liked what I learned there. But, I'm not going to write a technical blog post about that either.
+I recommend two turorials; they explain the process really well, so I am not going duplicate their efforts: http://alignedleft.com/tutorials/d3, http://maptimesea.github.io/2015/01/07/d3-mapping.html.
+</p>
+
+<p>One thing that I did do time and time again this week that I think would be helpful to document is starting a non-Ruby server! It's not that complicated, but I didn't find great, super accessible instructions. In my case, I used Node.js
+this week, and you can use Node to run a server.
+</p>
+
+<h2>Step 1: Install Node</h2>
+
+<p>Go to <a href="www.nodejs.org">nodejs.org</a> and click install. Pretty straight forward.</p>
+
+<img src="/nodejs.png">
+
+<h2>Step 2: Install npm for http-server</h2>
+
+<p>npm is the package manager for node (npm : node.js :: gems : ruby). <a href="https://www.npmjs.com/package/http-server">Http-server</a> is "a simple zero-configuration command line http server."
+</p>
+
+<p>In your terminal run:</p>
+
+<code>$ npm install http-server -g</code>
+
+<p>This installs http-server globally so it can be run from the command line.</p>
+
+<img src="/http-server.png">
+
+<h2>Step 3: Use it</h2>
+
+<p>Navigate to your project directory (whatever directory you want available on the local server) and run:</p>
+
+<code>$ http-server [path] [options]</code>
+
+<p>[path] defaults to ./public if the folder exists, and ./ otherwise. This means that if you don't specify anything here, the server will default
+to the folder you are currently in.
+</p>
+
+<p>If you don't specify options, the port that it defaults to is localhost8080:</p>
+
+<p>Finally, navigate to localhost:8080 in your browser, and voila your project is accessible.</p>
+
+<img src="/localhost8080.png">

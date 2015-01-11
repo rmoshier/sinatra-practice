@@ -3,7 +3,6 @@
 body {
   background: rgb(251, 246, 226);
   margin: 0 0 0 0;
-  font: Helvetica;
 }
 
 /* lay out */
@@ -24,6 +23,18 @@ h1 {
   letter-spacing: 1px;
   text-transform: none;
   line-height: 1.4em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(107, 122, 130);
+  letter-spacing: 1px;
+  text-transform: none;
+  line-height: 1.4em;
+  text-decoration: underline;
 }
 
 p {
